@@ -1,0 +1,52 @@
+{
+  "name": "@kellerkinder/tailwind-config",
+  "version": "0.0.0",
+  "description": "Kellerkinder corporate design tailwind config",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "lint:fix": "eslint --fix index.js"
+  },
+  "keywords": [
+    "kellerkinder",
+    "k10r",
+    "tailwind",
+    "configuration",
+    "css"
+  ],
+  "author": "Kellerkinder GmbH",
+  "contributors": [
+    {
+      "name": "Rico Herwig",
+      "email": "r.herwig@kellerkinder.de"
+    }
+  ],
+  "peerDependencies": {
+    "autoprefixer": "^10.0.0",
+    "postcss": "^8.0.0",
+    "tailwindcss": "^2.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/ui": "^0.7.2"
+  },
+  "devDependencies": {
+    "@kellerkinder/eslint-config": "^1.0.0-rc.0",
+    "eslint": "^7.18.0",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "engines": {
+    "node": ">= 12"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kellerkinderDE/tailwind-config"
+  },
+  "bugs": {
+    "url": "https://github.com/kellerkinderDE/tailwind-config/issues"
+  },
+  "homepage": "https://www.kellerkinder.de",
+  "license": "MIT"
+}
