@@ -1,3 +1,5 @@
+const legacy = require('./lib/legacy');
+
 module.exports = {
     important: true,
     theme: {
@@ -13,6 +15,7 @@ module.exports = {
         },
         extend: {
             colors: {
+                ...legacy.colors,
                 code: {
                     1: '#f4f5f7',
                     2: '#172b4d',
@@ -46,6 +49,7 @@ module.exports = {
                 24: '6rem',
             },
             fontSize: {
+                ...legacy.fontSize,
                 pagetitle: '2.4em',
                 table: '.95em',
                 xxs: '.72rem',
@@ -73,7 +77,4 @@ module.exports = {
         opacity: ['responsive', 'hover', 'focus', 'disabled'],
         fontWeight: ['hover', 'focus'],
     },
-    plugins: [
-        require('@tailwindcss/ui'),
-    ],
 };
