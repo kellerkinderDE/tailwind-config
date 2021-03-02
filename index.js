@@ -1,4 +1,5 @@
 const legacy = require('./lib/legacy');
+const plugins = require('./lib/plugins');
 
 module.exports = {
     important: true,
@@ -20,33 +21,43 @@ module.exports = {
                     1: '#f4f5f7',
                     2: '#172b4d',
                 },
-                body: '#171c21',
+                body: '#eff3f6',
+                primary: '#171c21',
+                secondary: '#ec681b',
+                secondaryHover: '#ec3b13',
                 corporate: '#ec681b',
+                corporateHover: '#ec3b13',
                 initial: 'initial',
+            },
+            borderColor: (theme) => {
+                return {
+                    corporate: theme('colors.secondary'),
+                };
             },
             lineHeight: {
                 normal: '1.7',
                 relaxed: '1.85',
+            },
+            minWidth: {
+                initial: 'initial',
             },
             maxWidth: (theme) => {
                 return {
                     'screen-xl': theme('screens.xl'),
                 };
             },
-            maxHeight: {
-                '(screen-16)': 'calc(100vh - 4rem)',
-            },
-            spacing: {
-                '(screen-16)': 'calc(100vh - 4rem)',
+            width: {
+                84: '21rem',
             },
             zIndex: {
-                100: '100',
+                51: 51,
+                100: 100,
+                modal: 200,
             },
-            inset: {
-                '-1': '-1rem',
-                16: '4rem',
-                20: '5rem',
-                24: '6rem',
+            inset: (theme) => {
+                return {
+                    16: theme('spacing.16'),
+                };
             },
             fontSize: {
                 ...legacy.fontSize,
@@ -62,19 +73,15 @@ module.exports = {
             listStyleType: {
                 square: 'square',
             },
-            minWidth: {
-                initial: 'initial',
-            },
-            height: {
-                500: '500px',
-            },
         },
     },
     variants: {
-        backgroundColor: ['responsive', 'odd', 'even', 'hover', 'focus'],
+        backgroundColor: ['responsive', 'odd', 'even', 'hover', 'focus', 'group-hover'],
         borderColor: ['responsive', 'hover', 'focus'],
         borderWidth: ['responsive', 'first', 'last', 'hover', 'focus'],
-        opacity: ['responsive', 'hover', 'focus', 'disabled'],
-        fontWeight: ['hover', 'focus'],
+        display: ['responsive', 'empty', 'group-hover'],
+        margin: ['responsive', 'empty'],
+        opacity: ['responsive', 'hover', 'focus', 'disabled', 'group-hover'],
     },
+    plugins,
 };
