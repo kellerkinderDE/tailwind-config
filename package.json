@@ -1,6 +1,6 @@
 {
   "name": "@kellerkinder/tailwind-config",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Kellerkinder corporate design tailwind config",
   "main": "index.js",
   "files": [
