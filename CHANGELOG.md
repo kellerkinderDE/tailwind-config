@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2021-03-03
+### Changed
+- Changed legacy defaults to `false`
+
 ## [0.4.0] - 2021-03-02
 ### Breaking Changes
 - Converted entrypoint from object to factory function
@@ -37,7 +41,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial implementation
 
-[Unreleased]: https://github.com/kellerkinderDE/eslint-config/compare/0.4.0...HEAD
+[Unreleased]: https://github.com/kellerkinderDE/eslint-config/compare/0.6.0...HEAD
+[0.5.0]: https://github.com/kellerkinderDE/eslint-config/compare/0.4.0...0.5.0
 [0.4.0]: https://github.com/kellerkinderDE/eslint-config/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/kellerkinderDE/eslint-config/compare/0.2.1...0.3.0
 [0.2.1]: https://github.com/kellerkinderDE/eslint-config/compare/v0.2.0...0.2.1
