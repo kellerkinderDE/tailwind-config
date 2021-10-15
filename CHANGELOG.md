@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2021-10-16
+### Fixed
+- Added the hash sign to the color values to make them valid colors
+
 ## [1.0.0] - 2021-10-15
 ### Added
 - Color shades for `gray` and `orange`
