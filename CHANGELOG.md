@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2021-10-15
+### Added
+- Color shades for `gray` and `orange`
+  - They reflect the percentage of color intensity (`gray-100`, `gray-80`, ...)
+- `@tailwindcss/forms` is not part of the default plugins
+
+### Removed
+- **Breaking**: Configuration for using legacy colors and font sizes has been removed
+
 ## [0.5.1] - 2021-03-03
 ### Removed
 - `@tailwindcss/ui` dependency
@@ -45,7 +54,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial implementation
 
-[Unreleased]: https://github.com/kellerkinderDE/eslint-config/compare/0.5.1...HEAD
+[Unreleased]: https://github.com/kellerkinderDE/eslint-config/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/kellerkinderDE/eslint-config/compare/0.5.1...1.0.0
 [0.5.1]: https://github.com/kellerkinderDE/eslint-config/compare/0.5.0...0.5.1
 [0.5.0]: https://github.com/kellerkinderDE/eslint-config/compare/0.4.0...0.5.0
 [0.4.0]: https://github.com/kellerkinderDE/eslint-config/compare/0.3.0...0.4.0

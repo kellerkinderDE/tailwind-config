@@ -1,6 +1,6 @@
 {
   "name": "@kellerkinder/tailwind-config",
-  "version": "0.5.1",
+  "version": "1.0.0",
   "description": "Kellerkinder corporate design tailwind config",
   "main": "index.js",
   "files": [
@@ -31,6 +31,10 @@
     "autoprefixer": "^10.0.0",
     "postcss": "^8.0.0",
     "tailwindcss": "^2.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.4",
+    "values.js": "^2.0.0"
   },
   "devDependencies": {
     "@kellerkinder/eslint-config": "^2.0.0",

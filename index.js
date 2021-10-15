@@ -1,14 +1,8 @@
-const createLegacyConfig = require('./lib/legacy');
+const colors = require('./lib/theme/colors');
 const plugins = require('./lib/plugins');
 
-module.exports = (config) => {
-    const {
-        colors,
-        fontSize,
-    } = createLegacyConfig(config);
-
+module.exports = () => {
     return {
-        important: true,
         theme: {
             screens: {
                 sm: '576px',
@@ -21,25 +15,7 @@ module.exports = (config) => {
                 mono: ['IBM Plex Mono', 'monospace'],
             },
             extend: {
-                colors: {
-                    ...colors,
-                    code: {
-                        1: '#f4f5f7',
-                        2: '#172b4d',
-                    },
-                    body: '#eff3f6',
-                    primary: '#171c21',
-                    secondary: '#ec681b',
-                    secondaryHover: '#ec3b13',
-                    corporate: '#ec681b',
-                    corporateHover: '#ec3b13',
-                    initial: 'initial',
-                },
-                borderColor: (theme) => {
-                    return {
-                        corporate: theme('colors.secondary'),
-                    };
-                },
+                colors,
                 lineHeight: {
                     normal: '1.7',
                     relaxed: '1.85',
@@ -66,7 +42,6 @@ module.exports = (config) => {
                     };
                 },
                 fontSize: {
-                    ...fontSize,
                     pagetitle: '2.4em',
                     table: '.95em',
                     xxs: '.72rem',
