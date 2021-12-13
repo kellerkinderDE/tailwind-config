@@ -56,14 +56,6 @@ module.exports = () => {
                 },
             },
         },
-        variants: {
-            backgroundColor: ['responsive', 'odd', 'even', 'hover', 'focus', 'group-hover'],
-            borderColor: ['responsive', 'hover', 'focus'],
-            borderWidth: ['responsive', 'first', 'last', 'hover', 'focus'],
-            display: ['responsive', 'empty', 'group-hover'],
-            margin: ['responsive', 'empty'],
-            opacity: ['responsive', 'hover', 'focus', 'disabled', 'group-hover'],
-        },
         plugins,
     };
 };

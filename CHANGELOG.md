@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2021-12-13
+### Changed
+- Configuration now requires Tailwind 3.x to be installed
+
+### Removed
+- Plugin for `empty` variants, since they are included with Tailwind 3
+
 ## [1.0.1] - 2021-10-16
 ### Fixed
 - Added the hash sign to the color values to make them valid colors
@@ -58,7 +65,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial implementation
 
-[Unreleased]: https://github.com/kellerkinderDE/eslint-config/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/kellerkinderDE/eslint-config/compare/2.0.0...HEAD
+[2.0.0]: https://github.com/kellerkinderDE/eslint-config/compare/1.0.1...2.0.0
+[1.0.1]: https://github.com/kellerkinderDE/eslint-config/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/kellerkinderDE/eslint-config/compare/0.5.1...1.0.0
 [0.5.1]: https://github.com/kellerkinderDE/eslint-config/compare/0.5.0...0.5.1
 [0.5.0]: https://github.com/kellerkinderDE/eslint-config/compare/0.4.0...0.5.0

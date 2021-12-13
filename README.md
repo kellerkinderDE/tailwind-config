@@ -7,7 +7,7 @@ This package provides the Kellerkinder [TailwindCSS](https://tailwindcss.com) co
 ## Requirements
 This config has been developed and tested with the following requirements:
 * NodeJS >= 12
-* TailwindCSS >= 2.0.0
+* TailwindCSS >= 3.0.0
 * PostCSS >= 8.0.0
 * Autoprefixer >= 10.0.0
 
